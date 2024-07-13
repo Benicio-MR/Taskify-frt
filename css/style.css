@@ -1,0 +1,99 @@
+:root {
+   --txt-main-color: #000000;
+   --bg-main-color: #ddd;
+   --divs-color: #fff;
+   --a-color: #eee;
+   --btn-main-color: #c7c7c7;
+   --btn-color-1: #ffe100;
+   --btn-color-2: #00ff00;
+   --btn-color-5: #4bff4b;
+   --btn-color-3: #0000ff;
+   --btn-color-4: #ff00ff;
+}
+* {
+   font-family: cursive;
+}
+body {
+   background-color: var(--bg-main-color);
+}
+header, .notes {
+   background-color: var(--divs-color);
+   color: var(--txt-main-color);
+   gap: 16px;
+}
+.left {  
+   font-size: 14pt;
+}
+.right {
+   gap: 8px;
+   display: flex;
+   position: absolute;
+   bottom: 272px;
+   left: 200px;
+   margin: 0;
+   align-items: center;
+   text-align: center;
+}
+.note {
+   padding: 16px;
+   background-color: var(--btn-color-2);
+}
+#del-note, #edit {
+   display: flex;
+   gap: 16px;
+   background-color: var(--btn-color-5);
+   margin: 0;
+   outline: 2px solid #000000;
+   transition: 0s;
+   border-bottom: 2.5px solid var(--txt-main-color);
+   flex-direction: column;
+   border-radius: 6px;
+}
+#del-note {
+   cursor: pointer;
+   display: flex;
+   flex-direction: column;
+}
+#edit {
+   text-decoration: none;
+}
+header {
+   margin: 0;
+   margin-bottom: 15px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+.a, .b, .c, .d{
+   text-decoration: none;
+   border: 2px solid var(--txt-main-color);
+   border-bottom: 4px solid var(--txt-main-color);
+   border-radius: 8px;
+}
+.a {
+   background-color: var(--btn-color-1);
+}
+.b {
+   background-color: var(--btn-color-3);
+}
+.c {
+   background-color: var(--btn-color-4);
+}
+.d {
+   background-color: var(--btn-color-2);
+}
+a:hover {
+   transition: 0s;
+   border-bottom: 2px solid var(--txt-main-color);
+}
+#edit:hover {
+   transition: 0s;
+   border-bottom: none;
+}
+#del-note:hover{
+   transition: 0s;
+   border-bottom: none;
+}
+.texi {
+   height: 64px;
+}

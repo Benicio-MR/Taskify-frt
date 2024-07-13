@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Taskify: Simplify your to-do, achieve more</title>
+   <link rel="shortcut icon" href="../css/common/taskifyico.png" type="image/x-icon">
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <header>
+      <img src="../css/common/taskify.png" alt="icon">
+      <a class="a" href="./addTextNote.html">Add text note</a>
+   </header>
+   
+   <div class="notes" onload="verifinotesc()">
+      <h3>
+         Your notes:
+
+      </h3>
+      <div class="notel">
+      </div>
+   </div>
+   <div class="dsp"></div>
+   <div class="modal-shadow" hidden>
+      <div class="modal">
+        <h2 class="title">Are you sure you want to delete this note?</h2>
+        <div class="buttons">
+          <button class="del-pokemon" id="del">Delete</button>
+          <button class="cancel-deleting" id="cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+   <script src="../js/home.js"></script>
+   <script src="../js/deleteNote.js"></script>
+</body>
+</html>
