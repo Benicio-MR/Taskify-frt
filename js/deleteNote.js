@@ -15,7 +15,7 @@ const closeModal = () => {
 const deleteNote = async () => {
    console.log(noteName);
 
-   const response = await fetch(`http://localhost:3000/notes/delete/${noteName}`, {
+   const response = await fetch(`https://benicio-mr.github.io/Taskify-bck/notes/delete/${noteName}`, {
      method: 'DELETE',
    });
 
