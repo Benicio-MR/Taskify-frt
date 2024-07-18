@@ -3,7 +3,7 @@ const ttl = document.getElementById('ttl');
 const cont = document.getElementById('cont');
 
 const registerNote = async () => {
-   const response = await fetch("http://localhost:3000/notes/add/text", {
+   const response = await fetch("https://benicio-mr.github.io/Taskify-bck/notes/add/text", {
       method: 'POST',
       headers: {
          'Content-Type': 'application/json',
