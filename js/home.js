@@ -1,7 +1,7 @@
 const notesdv = document.querySelector(".notel");
 const srch = document.getElementById("srch");
 const showNotes = async () => {
-   const respnse = await fetch("http://localhost:3000/notes")
+   const respnse = await fetch("https://benicio-mr.github.io/Taskify-bck/notes")
    const notes = await respnse.json()
    console.log('Notes', notes);
    notes.forEach(({id, title, description}) => {
