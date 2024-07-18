@@ -7,7 +7,7 @@ const id = params.get('id');
 console.log(params, id);
 
 const load = async () => {
-   const response = await fetch(`http://localhost:3000/notes/${id}`);
+   const response = await fetch(`https://benicio-mr.github.io/Taskify-bck/notes/${id}`);
    const notej = await response.json();
    console.log(notej);
    if(notej.title.indexOf('_')) {
@@ -21,7 +21,7 @@ load();
 
 updateNote = async () => {
    if(iName.value.indexOf(' ')) {
-      const response = await fetch(`http://localhost:3000/notes/text/update/${id}`, {
+      const response = await fetch(`https://benicio-mr.github.io/Taskify-bck/notes/text/update/${id}`, {
          method: 'PUT',
          headers: {
            'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ updateNote = async () => {
       console.log(messg);
       alert('Updated with success');
    } else {
-      const response = await fetch(`http://localhost:3000/notes/text/update/${id}`, {
+      const response = await fetch(`https://benicio-mr.github.io/Taskify-bck/notes/text/update/${id}`, {
          method: 'PUT',
          headers: {
            'Content-Type': 'application/json',
